@@ -1,0 +1,60 @@
+.row
+  .column
+    %h2.ui.header
+      Clínicas
+      .sub.header 
+        Visualização de clínicas cadastradas
+  .column
+    .mini-divider
+    = link_to "+ Adicionar Nova Clínica", new_clinic_path, class: 'ui button blue', data: { disable_with:  t(:disable_with)}
+.divider
+.row
+  .column
+    .ui.segment
+      = simple_form_for url_for, method: :get do |f|
+        .fields
+          .field.two.wide
+            = f.input :by_cod, label: "Código"
+          .field.four.wide
+            = f.input :by_name, label: "Nome"
+          .field.three.wide
+            = f.input :by_cnpj, label: "CNPJ"
+          .field.two.wide
+            = f.input :by_status, label: "Situação", as: :select, include_blank: "Todos" 
+          .field.two.wide
+            = f.submit "Filtrar lista", name: nil, class: 'ui button green filter'
+.divider
+.row
+  .column
+    %table.ui.table.striped.bordered.celled
+      %thead
+        %tr
+          %th.collapsing Cod.
+          %th Nome
+          %th CNPJ
+          %th.collapsing Situação
+          %th.collapsing Data de cadastro
+          %th 
+      %tbody
+        - if @clinics.present?
+          - @clinics.each do |clinic|
+            %tr
+              %td= clinic.id
+              %td= clinic.name
+              %td= clinic.cnpj
+              %td= clinic.status ? "ativo" : "Inativo"
+              %td= clinic.created_at.strftime("%d/%m/%Y")
+              %td.collapsing
+                = link_to clinic_path(clinic), class: 'ui button icon gray mini' do
+                  %i.icon.eye
+                = link_to clinic_clinic_users_path(clinic), class: 'ui button icon yellow mini' do
+                  %i.icon.users
+                = link_to edit_clinic_path(clinic), class: 'ui button icon blue mini' do
+                  %i.icon.pencil
+                = link_to clinic_path(clinic), method: :delete, data: { confirm: t(:confirm), disable_with: t(:disable_with) }, class: 'ui button icon red mini' do
+                  %i.icon.remove
+        - else
+          %tr
+            %td{colspan: 5}
+              %i Nenhuma clínica cadastrada.
+    

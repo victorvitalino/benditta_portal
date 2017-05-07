@@ -1,0 +1,9 @@
+pt-BR:
+  disable_with: "Aguarde, processando..."
+  confirm: "Tem certeza que deseja executar esta ação?"
+  cancel: "Cancelar"
+  filter: "Filtrar"
+  search: "Pesquisar"
+  list_return: "Retornar para listagem"
+  success: "Operação realizada com sucesso!"
+  error: "Não foi possível realizar esta ação!"

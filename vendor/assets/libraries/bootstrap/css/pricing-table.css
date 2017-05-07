@@ -1,0 +1,247 @@
+/*
+
+1. PRICING TABLE CLASSIC SHORTCODE
+2. PRICING TABLE ASCENDING SHORTCODE
+
+*/
+
+
+
+/* ------------------------------------------------------------------------ */
+/* 1. PRICING TABLE CLASSIC SHORTCODE
+/* ------------------------------------------------------------------------ */
+.noo-pricing-table.classic {
+  margin-bottom: 70px;
+}
+
+.noo-pricing-table.classic .noo-pricing-column {
+  width: 100%;
+  float: none;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .noo-pricing-table.classic .noo-pricing-column {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .noo-pricing-table.classic .noo-pricing-column {
+    width: 25%;
+  }
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content {
+  background: rgba(0, 0, 0, 0);
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header {
+  background-color: #2e4a53;
+  padding: 16px 24px;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-title {
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-value {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 16px 0 0;
+  text-align: center;
+  color: #fff;
+}
+
+.noo-pricing-table .noo-pricing-column.featured .pricing-content .pricing-header .pricing-value .noo-price {
+  color: #fff;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-value .noo-price {
+  font-size: 45px;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-value .noo-price, .noo-pricing-table .noo-pricing-column.featured .pricing-content .pricing-header .pricing-title {
+  color: #fff;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info ul li {
+  padding: 16px 10px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  background: #fff;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info ul li:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-info ul li i {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-footer {
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  padding: 16px 24px;
+  text-align: center;
+  -webkit-transition: border-color color .2s ease;
+  -o-transition: border-color color .2s ease;
+  transition: border-color color .2s ease;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-footer .btn {
+  background: none !important;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #d2d2d2;
+  color: #d2d2d2;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 18px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 8px 20px;
+  text-shadow: none;
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+/* 2. PRICING TABLE ASCENDING SHORTCODE
+/* ------------------------------------------------------------------------ */
+.noo-pricing-table.ascending {
+  margin-bottom: 40px;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column {
+  width: 100%;
+  float: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .noo-pricing-table.ascending .noo-pricing-column {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .noo-pricing-table.ascending .noo-pricing-column {
+    width: 25%;
+  }
+}
+
+.noo-pricing-table.ascending .noo-pricing-column.featured {
+  position: relative;
+  background: none repeat scroll 0 0 #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: -20px -1px 0;
+  z-index: 100;
+}
+
+@media screen and (max-width: 767px) {
+  .noo-pricing-table.ascending .noo-pricing-column.featured {
+    margin: 0 0 30px;
+  }
+}
+
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content {
+  border-left: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: none;
+}
+
+@media screen and (max-width: 991px) {
+  .noo-pricing-table.ascending .noo-pricing-column:nth-child(2n) .pricing-content {
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .noo-pricing-table.ascending .noo-pricing-column:nth-child(2n+1) .pricing-content {
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+.noo-pricing-table.ascending .noo-pricing-column:last-child .pricing-content {
+  border-right: 1px solid #e5e5e5;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-header {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-header .pricing-title {
+  background: #fff;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-header .pricing-value {
+  padding: 16px 24px;
+  background-color: #F2F2F2;
+  margin: 0;
+  color: #2d313f;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-value {
+  color: #fff;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-info, .noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-footer {
+  border: none;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-info ul li {
+  font-size: 16px;
+  background: #fff !important;
+  text-align: inherit;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-footer .btn {
+  margin: 15px 0;
+}
+
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-header .pricing-title {
+  margin: 10px 0;
+}
+
+

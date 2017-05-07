@@ -1,0 +1,29 @@
+= simple_form_for @user do |f|
+  %h3.ui.dividing.header 
+    Dados básicos
+  .fields
+    .four.wide.field
+      = f.input :first_name, placeholder: "Informe o primeiro nome"
+    .four.wide.field
+      = f.input :last_name, placeholder: "Informe o último nome"
+    .four.wide.field
+      = f.input :avatar, as: :file
+    .four.wide.field
+      = f.input :email, placeholder: "Informe um e-mail"
+  .fields
+    .four.wide.field
+      = f.input :password_digest
+    .four.wide.field
+      = f.input :password_confirmation
+    .four.wide.field
+      = f.input :privilege, as: :select, collection: ::AdminUser.privileges.keys, include_blank: false 
+    .four.wide.field
+      = f.input :status, as: :select, include_blank: false 
+  .fields
+    .sixteen.wide.field
+      = f.input :bio
+  .divider
+  .fields
+    .sixteen.wide.field
+      = f.button :submit, class: 'ui button green'
+      = link_to t(:cancel), users_path, class: 'ui button gray'

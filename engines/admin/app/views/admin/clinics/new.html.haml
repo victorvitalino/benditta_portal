@@ -1,0 +1,15 @@
+.row
+  .column
+    %h2.ui.header
+      Clínicas
+      .sub.header 
+        Formulário para criação de clínica
+.row
+  .column
+    .mini-divider
+    = link_to "Retornar para listagem", clinics_path, class: 'ui button blue', data: { disable_with:  t(:disable_with)}
+.divider
+.row
+  .column
+    .ui.segment
+      = render 'form'

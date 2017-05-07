@@ -1,0 +1,12 @@
+.ui.stackable.menu.inverted
+  .ui.container
+    %a.item{href: "#{admin.root_path}"}
+      %b Visão Geral
+    %a.item{href: "#{admin.users_path}"}
+      %b Usuários
+    .right.menu
+      %a.item{href: "#"}
+        %b Olá, #{current_user.name}
+
+      %a.item{href: "#{admin.logout_sessions_path}", data: { method: 'delete' }}
+        %b Sair

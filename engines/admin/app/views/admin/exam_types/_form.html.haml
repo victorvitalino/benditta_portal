@@ -1,0 +1,10 @@
+= simple_form_for @exam_type, remote: true do |f|
+  .fields
+    .nine.wide.field
+      = f.input :name
+    .four.wide.field
+      = f.input :status, as: :select, include_blank: false
+  .divider
+  .fields
+    .sixteen.wide.field
+      = f.button :submit, class: 'ui button green'

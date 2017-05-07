@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Benditta
+    %script{:src => "http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places", :type => "text/javascript"}
+    = csrf_meta_tags
+    = stylesheet_link_tag    'portal', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'portal', 'data-turbolinks-track': 'reload'
+  %body
+    = yield

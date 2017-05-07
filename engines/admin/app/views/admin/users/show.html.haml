@@ -1,0 +1,10 @@
+.row
+  .column
+    %h2.ui.header
+      Usuários
+      .sub.header 
+        Detalhamento de usuário #{@user.id}
+.row
+  .column
+    .mini-divider
+    = link_to t(:list_return), users_path, class: 'ui button blue', data: { disable_with:  t(:disable_with)}

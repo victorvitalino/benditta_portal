@@ -1,0 +1,21 @@
+= simple_form_for @post do |f|
+  %h3.ui.dividing.header
+    Dados básicos
+  .fields
+    .four.wide.field
+      = f.input :title, placeholder: "Informe o título"
+    .four.wide.field
+      = f.input :publish, as: :select, include_blank: false
+    .four.wide.field
+      = f.input :featured, as: :select, include_blank: false, label: "Notícia Destaque?"
+    .four.wide.field
+      = f.input :photo, as: :file
+      = link_to "visualizar arquivo atual", f.object.photo.url, target: '_blank' if !f.object.photo.to_s.empty?
+  .fields
+    .sixteen.wide.field
+      = f.input :content, input_html: { style: 'min-height: 500px', id: 'textarea'}
+  .divider
+  .fields
+    .sixteen.wide.field
+      = f.button :submit, class: 'ui button green'
+      = link_to t(:cancel), users_path, class: 'ui button gray'

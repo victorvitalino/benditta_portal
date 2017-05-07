@@ -1,0 +1,52 @@
+.row
+  .column
+    %h2.ui.header
+      Exames 
+      .sub.header 
+        Visualização de exames cadastrados
+  .column
+    .mini-divider
+    = link_to "+ Adicionar Novo Exame", new_exam_path, class: 'ui button blue', data: { disable_with:  t(:disable_with)}
+    = link_to "Gestão de tipos", exam_types_path, class: 'ui button yellow', data: { disable_with:  t(:disable_with)}
+.divider
+.row
+  .column
+    .ui.segment
+      = simple_form_for url_for, method: :get do |f|
+        .fields
+          .field.two.wide
+            = f.input :by_cod, label: "Código"
+          .field.four.wide
+            = f.input :by_name, label: "Nome"
+          .field.two.wide
+            = f.input :by_status, label: "Situação", as: :select, include_blank: "Todos" 
+          .field.two.wide
+            = f.submit t(:filter), name: nil, class: 'ui button green filter'
+.divider
+.row
+  .column
+    %table.ui.table.striped.bordered.celled
+      %thead
+        %tr
+          %th.collapsing Cod.
+          %th Nome
+          %th.collapsing Situação
+          %th.collapsing Data de cadastro
+          %th 
+      %tbody
+        - if @exams.present?
+          - @exams.each do |exam|
+            %tr
+              %td= exam.id
+              %td= exam.name
+              %td= exam.status ? "Ativo" : "Inativo"
+              %td= exam.created_at.strftime("%d/%m/%Y")
+              %td.collapsing
+                = link_to edit_exam_path(exam), class: 'ui button icon blue mini' do
+                  %i.icon.pencil
+                = link_to exam_path(exam), method: :delete, data: { confirm: t(:confirm), disable_with: t(:disable_with) }, class: 'ui button icon red mini' do
+                  %i.icon.remove
+        - else
+          %tr
+            %td{colspan: 4}
+              %i Nenhum exame cadastrado.

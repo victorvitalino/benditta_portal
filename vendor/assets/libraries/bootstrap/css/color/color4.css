@@ -1,0 +1,313 @@
+/* --------------------------------------------------------------------- */
+/* BRIGHT YELLOW & LIGHT GRAYISH BLU
+/* --------------------------------------------------------------------- */
+
+
+
+/*
+
+LIST COLOR:
+
+1. primary_color: #f3c93a
+2. secondary_color: #d5e5f2
+2. #d4a60d
+3. #ecb90e
+4. #A38828
+5. #8ba7bd
+6. rgba(243, 201, 58, 0.95)
+7. rgba(243, 201, 58, 0.5)
+8. rgba(243, 201, 58, 0.7)
+9. rgba(212, 166, 13, 0.9)
+
+*/
+
+
+
+a,
+.text-primary,
+.calling-info .calling-content .fa,
+.footer .copyright a:hover,
+.back-to-top,
+.content-meta > span > a:hover,
+.comments-title span, .comment-reply-title span,
+.comment-respond .required,
+.property-form input[type="checkbox"]:checked:before,
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-title,
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-value .noo-price,
+.noo-pricing-table.ascending .noo-pricing-column .pricing-content .pricing-header .pricing-title,
+.tabs-left > .nav-tabs > li > a:hover,
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-footer .btn:hover,
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-header .pricing-value .noo-price,
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-footer .btn {
+	color: #f3c93a;
+}
+
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a:hover,
+.gsearch .gsearch-wrap .gsearch-content .gsearch-field .form-group .gslider-range .noUi-connect,
+.gsearch .gsearch-wrap .gsearch-content .gsearch-action .gsubmit .btn:hover,
+.recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a:hover,
+.recent-properties.recent-properties-featured .property-info .property-action a:hover,
+.property .property-featured .thumbnails .caroufredsel-next:hover,
+.property .property-featured .thumbnails .caroufredsel-prev:hover,
+.agent-property .agents .conact-agent .form-action button:hover,
+.agent-property .agents .conact-agent .form-action button:focus,
+.read-more:hover,
+.read-more:focus,
+.read-more:active,
+.read-more.active,
+.open > .dropdown-toggle.read-more,
+.jp-play-bar,
+.jp-volume-bar-value,
+.agents .hentry .agent-wrap .agent-desc .agent-action a:hover,
+.cta_buy_theme .text-block a:hover,
+.btn-secondary:hover,
+.my-properties .hentry .property-info .property-action a:hover, 
+.my-properties .hentry .property-info .property-action a:focus, 
+.properties .hentry .property-info .property-action a:active, 
+.properties .hentry .property-info .property-action a.active, 
+.open>.dropdown-toggle.properties .hentry .property-info .property-action a,
+.noo-logreg .btn:hover,
+.properties .hentry .property-info .property-action a:hover,
+.properties .hentry .property-info .property-action a:focus,
+.noo-pricing-table .noo-pricing-column.featured .pricing-content .pricing-header,
+ul.wysihtml5-toolbar a:hover,
+.contact-desc .submit:hover,
+.contact-desc-1 .submit:hover,
+.noo-vc-accordion.panel-group .panel-heading:hover,
+.noo-vc-accordion.panel-group .panel-heading.active,
+.nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li.active > a,
+.tabs-left > .nav-tabs > li.active > a:hover,
+.tabs-left > .nav-tabs > li.active > a:focus,
+.noo-progress-bar .progress-bar-primary,
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active,
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-value,
+.social-list a:hover,
+.moxie-shim input:hover + .btn {
+	background-color: #f3c93a;
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active {
+	background: #f3c93a !important;
+}
+
+.navbar-header .navbar-toggle .icon-bar,
+.property ul.property-share > li > a:hover,
+.hentry.format-quote > .content-wrap, 
+.hentry.format-link > .content-wrap,
+.pagination .page-numbers.current,
+.pagination a.page-numbers:hover,
+.noo-agent ul.agent-social li a:hover,
+.noo-agent .conact-agent .btn:hover,
+.noo-agent .conact-agent .btn:focus,
+.noo-agent .agent-properties .btn:hover,
+.noo-agent .agent-properties .btn:focus,
+.noo-sidebar .gsearch .gsearch-wrap .gsearch-content .gsearch-action .gsubmit .btn:hover,
+.noo-sidebar .gsearch .gsearch-wrap .gsearch-content .gsearch-action .gsubmit .btn:focus,
+.recent-properties .caroufredsel-next, 
+.recent-properties .caroufredsel-prev,
+.testimonial #carousel-testimonial .carousel-indicators li.active,
+.recent-agents .caroufredsel-next,
+.recent-agents .caroufredsel-prev,
+.noo-map .gmap-control a,
+.noo-map .gmap-zoom a,
+.noo-map .gmap-infobox .info-close,
+.noo-map .gmap-infobox .info-more .info-action,
+.noo-map .gsearch .gsearch-title i,
+.form-submit input[type="submit"]:hover, 
+.form-submit input[type="submit"]:focus,
+.noo-submit input,
+.tagcloud a:hover,
+.btn-primary {
+	background: #f3c93a;
+}
+
+.main-navigation ul.navbar-nav > li > .dropdown-menu {
+	border-top: 2px solid #f3c93a;
+}
+
+.main-navigation ul.navbar-nav > li > .dropdown-menu:before {
+	border-bottom: 8px solid #f3c93a;
+}
+
+
+@media screen and (min-width: 480px) {
+  .my-properties.list .property-info .property-action a:hover, .properties.list .property-info .property-action a:focus, .properties.list .property-info .property-action a:active, .properties.list .property-info .property-action a.active, .open>.dropdown-toggle.properties.list .property-info .property-action a {
+    background-color: #f3c93a;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.page-fullwidth .properties.list .property-fullwidth-action.property-action a:hover {
+		background-color: #f3c93a;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.noo_advanced_search_property.vertical .gsearch .gsearch-wrap .gsearch-content .gsearch-action .gsubmit .btn:hover {
+		background: #f3c93a;
+	}
+}
+
+.contact-desc .submit:hover, .contact-desc-1 .submit:hover,
+.form-submit input[type="submit"]:hover, 
+.form-submit input[type="submit"]:focus,
+.noo-submit input,
+.tagcloud a:hover,
+.noo-vc-accordion.panel-group .panel-heading:hover,
+.noo-vc-accordion.panel-group .panel-heading.active,
+.btn-primary,
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active,
+.form-control:focus,
+.moxie-shim input:hover + .btn,
+.noo-pricing-table.ascending .noo-pricing-column.featured .pricing-content .pricing-footer .btn {
+  border-color: #f3c93a;
+}
+
+.noo-pricing-table .noo-pricing-column .pricing-content .pricing-footer .btn:hover,
+ul.wysihtml5-toolbar a:hover {
+  border-color: #f3c93a !important;
+}
+
+.noo-map .gmap-loading .gmap-loader > div,
+.ispostauthor {
+	background: none repeat scroll 0 0 #f3c93a;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px #f3c93a;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px #f3c93a;
+	-o-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px #f3c93a;
+	-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px #f3c93a;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px #f3c93a;
+}
+
+.footer a:hover,
+.featured-property > ul > li .featured-decs .featured-status a:hover {
+	color: #d5e5f2;
+}
+
+.hentry.format-quote > .content-wrap:hover,
+.hentry.format-link > .content-wrap:hover,
+.form-submit input[type="submit"],
+.cta_buy_theme .text-block a,
+.properties .hentry .property-info .property-action a,
+.recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action,
+.gsearch .gsearch-wrap .gsearch-content .gsearch-action .gsubmit .btn {
+	background: #d5e5f2;
+}
+
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a,
+.read-more,
+.form-submit input[type="submit"],
+.agents .hentry .agent-wrap .agent-desc .agent-action a,
+.btn-secondary,
+.contact-desc .submit, .contact-desc-1 .submit,
+.noo-logreg .btn,
+.recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a,
+.recent-properties.recent-properties-featured .property-info .property-action a {
+	background-color: #d5e5f2;
+}
+
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover {
+	background: #d5e5f2 !important;
+}
+
+.noo-slider .caroufredsel_wrapper .sliders .slide-item.noo-property-slide .slide-caption .slide-caption-action a,
+.read-more,
+.cta_buy_theme .text-block a,
+.btn-secondary,
+.contact-desc .submit, .contact-desc-1 .submit,
+.noo-logreg .btn,
+.recent-properties .recent-properties-content .property-row .hentry .property-summary .property-info .property-action a,
+.recent-properties.recent-properties-featured .property-info .property-action a {
+	border-color: #d5e5f2;
+}
+
+@media screen and (min-width: 480px) {
+  .my-properties.list .property-info .property-action a {
+    background-color: #d5e5f2;
+    border-color: #d5e5f2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+	.page-fullwidth .properties.list .property-fullwidth-action.property-action a {
+		background-color: #d5e5f2;
+		border-color: #d5e5f2;
+	}
+}
+
+a:hover, 
+a:focus,
+ul.social-top > li a:hover i,
+.top-header-content .content-item a:hover,
+.main-navigation ul.navbar-nav .open > a,
+.dark-style .main-navigation ul.navbar-nav .open > a,
+.main-navigation ul.navbar-nav .open > a:hover,
+.main-navigation ul.navbar-nav .open > a:focus,
+.main-navigation ul.navbar-nav > li li > a:hover,
+.main-navigation ul.navbar-nav > .active > a,
+.recent-properties .recent-properties-content .property-row .hentry:hover .property-title a,
+.recent-properties .recent-properties-content .property-row .hentry .property-category a:hover,
+.properties .hentry .property-featured .property-category a:hover,
+.properties-header .properties-toolbar a.selected, 
+.properties-header .properties-toolbar a:hover,
+.user-sidebar-menu .user-menu-links a:hover, 
+.user-sidebar-menu .user-menu-links a:focus, 
+.user-sidebar-menu .user-menu-links a.active {
+	color: #d4a60d;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background: #d4a60d;
+}
+
+.recent-properties .caroufredsel-next:hover,
+.recent-properties .caroufredsel-prev:hover,
+.recent-agents .caroufredsel-next:hover,
+.recent-agents .caroufredsel-prev:hover,
+.noo-map .gmap-infobox .info-more .info-action:hover {
+	background: #ecb90e;
+}
+
+.footer .copyright {
+	background: #A38828;
+}
+
+.btn-secondary,
+.properties .hentry .property-info .property-action a {
+	color: #8ba7bd;
+}
+
+.recent-properties.recent-properties-featured .property-featured .property-category {
+	background: rgba(243, 201, 58, 0.5);
+}
+
+.search-box .gsearch, 
+.footer .footer-nav:before {
+	background: rgba(243, 201, 58, 0.95);
+}
+
+.our-sevices .overlay,
+.call-to-action .overlay {
+	background: rgba(212, 166, 13, 0.9);
+}
+
+.noo-map .gsearch .gsearch-title {
+	background: rgba(243, 201, 58, 0.7);
+}
+
