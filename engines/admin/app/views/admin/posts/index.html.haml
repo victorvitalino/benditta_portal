@@ -35,14 +35,12 @@
           - @posts.each do |post|
             %tr
               %td= post.id
-              %td= post.name
-              %td= post.status ? "ativo" : "Inativo"
+              %td= post.title
+              %td= post.publish ? "ativo" : "Inativo"
               %td= post.created_at.strftime("%d/%m/%Y")
               %td.collapsing
                 = link_to post_path(post), class: 'ui button icon gray mini' do
                   %i.icon.eye
-                = link_to post_post_users_path(post), class: 'ui button icon yellow mini' do
-                  %i.icon.users
                 = link_to edit_post_path(post), class: 'ui button icon blue mini' do
                   %i.icon.pencil
                 = link_to post_path(post), method: :delete, data: { confirm: t(:confirm), disable_with: t(:disable_with) }, class: 'ui button icon red mini' do

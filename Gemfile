@@ -19,8 +19,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'haml'
 gem 'simple_form'
-
-
+gem "mini_magick"
+gem 'carrierwave'
+gem 'fog'
 gem 'validates_cpf_cnpj'
 gem 'validates_timeliness'
 gem 'email_validator'
