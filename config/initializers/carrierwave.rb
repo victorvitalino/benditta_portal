@@ -12,9 +12,9 @@ CarrierWave.configure do |config|
 
     # Configuration for Amazon S3
     :provider              => 'AWS',
-    :aws_access_key_id     => 'AKIAJVV4NDLHHVRCOFBQ',
-    :aws_secret_access_key => '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',
-    :region                => 'sa-east-1'
+    :aws_access_key_id     => ENV['S3_KEY'],
+    :aws_secret_access_key => ENV['S3_SECRET'],
+    :region                => ENV['S3_REGION']
   }
 
   # For testing, upload files to local `tmp` folder.
@@ -28,5 +28,5 @@ CarrierWave.configure do |config|
 
   config.cache_dir = "#{Rails.root}/tmp/uploads"                  # To let CarrierWave work on heroku
 
-  config.fog_directory    = 'benditta'
+  config.fog_directory    = ENV['S3_BUCKET_NAME']
 end
