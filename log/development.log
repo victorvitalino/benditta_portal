@@ -6992,3 +6992,12 @@ Processing by Admin::PostsController#new as HTML
 Completed 200 OK in 70ms (Views: 66.0ms | ActiveRecord: 0.4ms)
 
 
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/" for 127.0.0.1 at 2017-05-24 13:10:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (38.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Portal::HomeController#index as HTML
+  Rendering engines/portal/app/views/portal/home/index.html.haml within layouts/portal
+  Rendered engines/portal/app/views/portal/home/index.html.haml within layouts/portal (64.2ms)
+Completed 200 OK in 1089ms (Views: 1043.0ms | ActiveRecord: 0.0ms)
+
+
