@@ -7,11 +7,12 @@ Admin::Engine.routes.draw do
 
   resources :users,      path: 'usuarios'
   resources :posts,      path: 'postagens'
-  resources :clinics,    path: 'clinicas' do
-    resources :clinic_users, path: 'usuarios'
-  end
-
-  resources :exams,      path: 'exames'
-  resources :exam_types, path: 'tipos-exame'
+  resources :dolls,      path: 'bonecas'
+  # resources :clinics,    path: 'clinicas' do
+  #   resources :clinic_users, path: 'usuarios'
+  # end
+  #
+  # resources :exams,      path: 'exames'
+  # resources :exam_types, path: 'tipos-exame'
 
 end

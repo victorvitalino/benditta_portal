@@ -6,12 +6,8 @@
           = image_tag('logo-sample.png')
       = simple_form_for @session do |f|
         .ui.stacked.secondary.segment
-          %h3 
+          %h3
             %b Acesso Restrito
           = f.input :email, label: false, placeholder: "Informe seu e-mail de acesso"
           = f.input :password, label: false, placeholder: "Informe sua senha de acesso"
-          = f.submit "Realizar acesso", class: 'ui button fluid primary'
-        .ui.error.message
-      .ui.message
-        Esqueceu sua senha?
-        %a{:href => "#"} Clique aqui
+          = f.submit "Realizar acesso", class: 'ui button fluid', style: 'background-color:#7973b4!important'

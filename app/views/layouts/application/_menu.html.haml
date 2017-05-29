@@ -1,9 +1,13 @@
-.ui.stackable.menu.inverted
+.ui.stackable.menu.inverted{style: 'background-color:#7973b4!important;'}
   .ui.container
     %a.item{href: "#{admin.root_path}"}
       %b Visão Geral
     %a.item{href: "#{admin.users_path}"}
       %b Usuários
+    %a.item{href: "#{admin.posts_path}"}
+      %b Postagens
+    %a.item{href: "#{admin.dolls_path}"}
+      %b Bonecas
     .right.menu
       %a.item{href: "#"}
         %b Olá, #{current_user.name}

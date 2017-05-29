@@ -1948,3 +1948,1115 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.0ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:14:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (55.3ms)
+  Rendered layouts/application/_header.html.haml (1.0ms)
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.8ms)
+Completed 200 OK in 411ms (Views: 357.3ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:14:46 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (13.7ms)
+  Rendered layouts/application/_header.html.haml (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.5ms)
+Completed 200 OK in 59ms (Views: 54.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:14:47 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (1.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (14.4ms)
+  Rendered layouts/application/_header.html.haml (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (2.4ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/gestao/postagens/new" for 127.0.0.1 at 2017-05-24 16:14:49 -0300
+Processing by Admin::PostsController#new as HTML
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/new.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (20.0ms)
+  Rendered engines/admin/app/views/admin/posts/new.html.haml within layouts/application (24.1ms)
+  Rendered layouts/application/_header.html.haml (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.3ms)
+Completed 200 OK in 67ms (Views: 61.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gestao/postagens/new" for 127.0.0.1 at 2017-05-24 16:14:55 -0300
+Processing by Admin::PostsController#new as HTML
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/new.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (15.8ms)
+  Rendered engines/admin/app/views/admin/posts/new.html.haml within layouts/application (18.8ms)
+  Rendered layouts/application/_header.html.haml (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.2ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:15:01 -0300
+Processing by Admin::PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODV+kzsEWmFyMA384V1Ch2kIhFMes5NrUN7QMmVsrzj1pxsrnN+eDOTi2AG5Fxs8pN697JwKRnH9dFKYf55QWw==", "post"=>{"title"=>"teste1231231", "publish"=>"true", "featured"=>"true", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fca6def5378 @tempfile=#<Tempfile:/tmp/RackMultipart20170524-2177-9jskuh.jpg>, @original_filename="image002.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[photo]\"; filename=\"image002.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>""}, "commit"=>"Criar Post"}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "publish", "photo", "featured", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "teste1231231"], ["content", ""], ["publish", true], ["photo", "#<ActionDispatch::Http::UploadedFile:0x007fca6def5378>"], ["featured", true], ["created_at", 2017-05-24 19:15:01 UTC], ["updated_at", 2017-05-24 19:15:01 UTC]]
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/gestao/postagens
+Completed 302 Found in 42ms (ActiveRecord: 36.7ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:15:01 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (19.8ms)
+  Rendered layouts/application/_header.html.haml (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (2.6ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gestao/postagens/6/edit" for 127.0.0.1 at 2017-05-24 16:15:04 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/edit.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (21.7ms)
+  Rendered engines/admin/app/views/admin/posts/edit.html.haml within layouts/application (26.2ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for "#<ActionDispatch::Http::UploadedFile:0x007fca6def5378>":String):
+    10:       = f.input :featured, as: :select, include_blank: false, label: "Notícia Destaque?"
+    11:     .four.wide.field
+    12:       = f.input :photo, as: :file
+    13:       = link_to "visualizar arquivo atual", f.object.photo.url, target: '_blank' if !f.object.photo.to_s.empty?
+    14:   .fields
+    15:     .sixteen.wide.field
+    16:       = f.input :content, input_html: { style: 'min-height: 500px', id: 'textarea'}
+  
+engines/admin/app/views/admin/posts/_form.html.haml:13:in `block in _engines_admin_app_views_admin_posts__form_html_haml__2660094434155614059_70253697055060'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:137:in `block (2 levels) in form_for_with_haml'
+haml (4.0.7) lib/haml/helpers.rb:278:in `with_tabs'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:137:in `block in form_for_with_haml'
+actionview (5.0.2) lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+actionview (5.0.2) lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+haml (4.0.7) lib/haml/helpers/action_view_xss_mods.rb:5:in `with_output_buffer_with_haml_xss'
+actionview (5.0.2) lib/action_view/helpers/capture_helper.rb:39:in `capture'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:52:in `capture_with_haml'
+actionview (5.0.2) lib/action_view/helpers/form_helper.rb:450:in `form_for'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:139:in `form_for_with_haml'
+haml (4.0.7) lib/haml/helpers/action_view_xss_mods.rb:28:in `form_for_with_haml_xss'
+simple_form (3.4.0) lib/simple_form/action_view_extensions/form_helper.rb:26:in `block in simple_form_for'
+simple_form (3.4.0) lib/simple_form/action_view_extensions/form_helper.rb:45:in `with_simple_form_field_error_proc'
+simple_form (3.4.0) lib/simple_form/action_view_extensions/form_helper.rb:25:in `simple_form_for'
+engines/admin/app/views/admin/posts/_form.html.haml:1:in `_engines_admin_app_views_admin_posts__form_html_haml__2660094434155614059_70253697055060'
+actionview (5.0.2) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.0.2) lib/active_support/notifications.rb:166:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:354:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:157:in `render'
+actionview (5.0.2) lib/action_view/renderer/partial_renderer.rb:343:in `render_partial'
+actionview (5.0.2) lib/action_view/renderer/partial_renderer.rb:311:in `block in render'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/partial_renderer.rb:310:in `render'
+actionview (5.0.2) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+actionview (5.0.2) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:10:in `block in render_with_haml'
+haml (4.0.7) lib/haml/helpers.rb:89:in `non_haml'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:10:in `render_with_haml'
+engines/admin/app/views/admin/posts/edit.html.haml:15:in `_engines_admin_app_views_admin_posts_edit_html_haml__2000764484029902081_70253697536760'
+actionview (5.0.2) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.0.2) lib/active_support/notifications.rb:166:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:354:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:157:in `render'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:14:in `render'
+actionview (5.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+actionview (5.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+actionview (5.0.2) lib/action_view/rendering.rb:104:in `_render_template'
+actionpack (5.0.2) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+actionview (5.0.2) lib/action_view/rendering.rb:83:in `render_to_body'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.0.2) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.0.2) lib/abstract_controller/rendering.rb:26:in `render'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (5.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/vitalino/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
+activesupport (5.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+railties (5.0.2) lib/rails/railtie.rb:193:in `public_send'
+railties (5.0.2) lib/rails/railtie.rb:193:in `method_missing'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:31:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (69.8ms)
+  Rendered layouts/application/_header.html.haml (1.1ms)
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.1ms)
+Completed 200 OK in 445ms (Views: 388.2ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/gestao/postagens/new" for 127.0.0.1 at 2017-05-24 16:31:29 -0300
+Processing by Admin::PostsController#new as HTML
+  [1m[36mAdmin::User Load (2.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/new.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (22.5ms)
+  Rendered engines/admin/app/views/admin/posts/new.html.haml within layouts/application (27.8ms)
+  Rendered layouts/application/_header.html.haml (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.6ms)
+Completed 200 OK in 93ms (Views: 86.3ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:31:36 -0300
+Processing by Admin::PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9HImiKZ7SKYZwhtdF7ji9QKXX+fKUxZkNibn1ot5z5ad6b2HUSk9XugFPXhlcpcQGMcxr3rh3WmvEgFWxrBkw==", "post"=>{"title"=>"testestse", "publish"=>"true", "featured"=>"true", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f5bbde1e108 @tempfile=#<Tempfile:/tmp/RackMultipart20170524-3753-10k98lp.jpg>, @original_filename="image002.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[photo]\"; filename=\"image002.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"asdfasdfasf"}, "commit"=>"Criar Post"}
+  [1m[36mAdmin::User Load (1.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "publish", "photo", "featured", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "testestse"], ["content", "asdfasdfasf"], ["publish", true], ["photo", "#<ActionDispatch::Http::UploadedFile:0x007f5bbde1e108>"], ["featured", true], ["created_at", 2017-05-24 19:31:36 UTC], ["updated_at", 2017-05-24 19:31:36 UTC]]
+  [1m[35m (48.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/gestao/postagens
+Completed 302 Found in 57ms (ActiveRecord: 50.3ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:31:36 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (26.1ms)
+  Rendered layouts/application/_header.html.haml (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.3ms)
+Completed 200 OK in 77ms (Views: 71.7ms | ActiveRecord: 1.6ms)
+
+
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:43:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (68.2ms)
+  Rendered layouts/application/_header.html.haml (1.9ms)
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (6.7ms)
+Completed 200 OK in 480ms (Views: 429.2ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/gestao/postagens/new" for 127.0.0.1 at 2017-05-24 16:43:20 -0300
+Processing by Admin::PostsController#new as HTML
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/new.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (23.6ms)
+  Rendered engines/admin/app/views/admin/posts/new.html.haml within layouts/application (28.4ms)
+  Rendered layouts/application/_header.html.haml (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.9ms)
+Completed 200 OK in 81ms (Views: 74.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:43:29 -0300
+Processing by Admin::PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rv4dxiTBh/pHIWGt9t2TmIM64VClIaahrW4x8r9XbBwbWHOqGxzOLaTmfTVjFrpPF1Og6YfjbY2bCuJovmBKsQ==", "post"=>{"title"=>"asdfasdfasdfsadfasdfasdfasdf", "publish"=>"true", "featured"=>"true", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00000002f0c858 @tempfile=#<Tempfile:/tmp/RackMultipart20170524-4747-134ptj2.jpg>, @original_filename="image002.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[photo]\"; filename=\"image002.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf"}, "commit"=>"Criar Post"}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "publish", "photo", "featured", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "asdfasdfasdfsadfasdfasdfasdf"], ["content", "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf"], ["publish", true], ["photo", "#<ActionDispatch::Http::UploadedFile:0x00000002f0c858>"], ["featured", true], ["created_at", 2017-05-24 19:43:29 UTC], ["updated_at", 2017-05-24 19:43:29 UTC]]
+  [1m[35m (56.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/gestao/postagens
+Completed 302 Found in 66ms (ActiveRecord: 59.7ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-24 16:43:29 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (25.0ms)
+  Rendered layouts/application/_header.html.haml (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (5.2ms)
+Completed 200 OK in 73ms (Views: 68.0ms | ActiveRecord: 1.1ms)
+
+
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/" for 127.0.0.1 at 2017-05-29 10:08:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (20.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Portal::HomeController#index as HTML
+  Rendering engines/portal/app/views/portal/home/index.html.haml within layouts/portal
+  Rendered engines/portal/app/views/portal/home/index.html.haml within layouts/portal (41.9ms)
+Completed 200 OK in 812ms (Views: 768.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gestao" for 127.0.0.1 at 2017-05-29 10:08:30 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (164.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (7.3ms)
+  Rendered layouts/application/_header.html.haml (3.6ms)
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (47.8ms)
+Completed 200 OK in 672ms (Views: 265.2ms | ActiveRecord: 275.5ms)
+
+
+Started DELETE "/gestao/sessions/logout" for 127.0.0.1 at 2017-05-29 10:08:35 -0300
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"l53+wFcVJcacj5qwxuXqo3AZ1KSb7oYkY6k9jFOOAXdaD5t48M7hqwpdT02er7MYvc/tGxlXUz7OA78mSXz+FA=="}
+Redirected to http://localhost:3000/gestao/sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/gestao/sessions/new" for 127.0.0.1 at 2017-05-29 10:08:35 -0300
+Processing by Admin::SessionsController#new as HTML
+  Rendering engines/admin/app/views/admin/sessions/new.html.haml within layouts/application_session
+  Rendered engines/admin/app/views/admin/sessions/new.html.haml within layouts/application_session (243.7ms)
+Completed 200 OK in 320ms (Views: 289.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gestao/sessions" for 127.0.0.1 at 2017-05-29 10:08:39 -0300
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kl8D1Glh01ApdRUdF69eC9FsTLtTuG6agpA2w9b4HHDnzWZszroXPb+nwOBP5QewHLp1BNEBu4AvOrRpzArjEw==", "session"=>{"email"=>"teste@exameaqui.com", "password"=>"[FILTERED]"}, "commit"=>"Realizar acesso"}
+  [1m[36mAdmin::User Load (2.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = $1 AND "admin_users"."password_digest" = $2 ORDER BY "admin_users"."id" ASC LIMIT $3[0m  [["email", "teste@exameaqui.com"], ["password_digest", "123456789"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/gestao/
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 10:08:39 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (3.6ms)
+  Rendered layouts/application/_header.html.haml (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.0ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 10:08:54 -0300
+Processing by Portal::HomeController#index as HTML
+  Rendering engines/portal/app/views/portal/home/index.html.haml within layouts/portal
+  Rendered engines/portal/app/views/portal/home/index.html.haml within layouts/portal (43.2ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/gestao/sessions/logout" for 127.0.0.1 at 2017-05-29 10:13:29 -0300
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zfOSv0HYgmHn2l/hu/i7svOfK2IW3xS4maAAXRrSEeMAYfcH5gNGDHEIihzjsuIJPkkS3ZRmwaI0CoL3ACDugA=="}
+Redirected to http://localhost:3000/gestao/sessions/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/gestao/sessions/new" for 127.0.0.1 at 2017-05-29 10:13:29 -0300
+Processing by Admin::SessionsController#new as HTML
+  Rendering engines/admin/app/views/admin/sessions/new.html.haml within layouts/application_session
+  Rendered engines/admin/app/views/admin/sessions/new.html.haml within layouts/application_session (10.5ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 10:50:43 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Redirected to http://localhost:3000/gestao/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/gestao/sessions/new" for 127.0.0.1 at 2017-05-29 10:50:43 -0300
+Processing by Admin::SessionsController#new as HTML
+  Rendering engines/admin/app/views/admin/sessions/new.html.haml within layouts/application_session
+  Rendered engines/admin/app/views/admin/sessions/new.html.haml within layouts/application_session (8.9ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gestao/sessions" for 127.0.0.1 at 2017-05-29 10:50:45 -0300
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H2rMO7qK4Z0wP0OuWpYeGwHhzOhnZVFIKzYC4e3wiozS+KmDHVEl8KbtllMC3EegzDf1V+XchFKGnIBL9wJ17w==", "session"=>{"email"=>"teste@exameaqui.com", "password"=>"[FILTERED]"}, "commit"=>"Realizar acesso"}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = $1 AND "admin_users"."password_digest" = $2 ORDER BY "admin_users"."id" ASC LIMIT $3[0m  [["email", "teste@exameaqui.com"], ["password_digest", "123456789"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/gestao/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 10:50:45 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/application/_header.html.haml (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (2.9ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 10:51:05 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/application/_header.html.haml (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.6ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 10:51:38 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (1.3ms)
+  Rendered layouts/application/_header.html.haml (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.4ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.7ms)
+
+
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 11:21:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (2.6ms)
+  Rendered layouts/application/_header.html.haml (1.2ms)
+  Rendered layouts/application/_menu.html.haml (143.1ms)
+Completed 500 Internal Server Error in 502ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `dolls_path' for #<ActionDispatch::Routing::RoutesProxy:0x007f80e2889e78>):
+     6:       %b Usuários
+     7:     %a.item{href: "#{admin.posts_path}"}
+     8:       %b Postagens
+     9:     %a.item{href: "#{admin.dolls_path}"}
+    10:       %b Bonecas
+    11:     .right.menu
+    12:       %a.item{href: "#"}
+  
+app/views/layouts/application/_menu.html.haml:9:in `_app_views_layouts_application__menu_html_haml__2347306031327194644_70095766455640'
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___4263870209231437234_70095883215520'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.4ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.4ms)
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 11:21:45 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/application/_header.html.haml (1.9ms)
+  Rendered layouts/application/_menu.html.haml (109.0ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `dolls_path' for #<ActionDispatch::Routing::RoutesProxy:0x007f80e2172f18>):
+     6:       %b Usuários
+     7:     %a.item{href: "#{admin.posts_path}"}
+     8:       %b Postagens
+     9:     %a.item{href: "#{admin.dolls_path}"}
+    10:       %b Bonecas
+    11:     .right.menu
+    12:       %a.item{href: "#"}
+  
+app/views/layouts/application/_menu.html.haml:9:in `_app_views_layouts_application__menu_html_haml__2347306031327194644_70095762606100'
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___4263870209231437234_70095755518500'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+Started GET "/gestao/bonecas" for 127.0.0.1 at 2017-05-29 11:22:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/gestao/bonecas"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (35.2ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [0 times] (0.0ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [58 times] (15.8ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (153.5ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (355.3ms)
+Started GET "/gestao/bonecas" for 127.0.0.1 at 2017-05-29 11:23:10 -0300
+  
+ActionController::RoutingError (uninitialized constant Admin::DollsController):
+  
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+railties (5.0.2) lib/rails/railtie.rb:193:in `public_send'
+railties (5.0.2) lib/rails/railtie.rb:193:in `method_missing'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.7ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [0 times] (0.0ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (8.6ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.2ms)
+Started GET "/gestao" for 127.0.0.1 at 2017-05-29 11:25:15 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/application/_header.html.haml (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.8ms)
+Completed 200 OK in 82ms (Views: 43.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/gestao/" for 127.0.0.1 at 2017-05-29 11:32:30 -0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/dashboard/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/application/_header.html.haml (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (7.6ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gestao/usuarios" for 127.0.0.1 at 2017-05-29 11:32:31 -0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/users/index.html.haml within layouts/application
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered engines/admin/app/views/admin/users/index.html.haml within layouts/application (85.7ms)
+  Rendered layouts/application/_header.html.haml (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.8ms)
+Completed 200 OK in 131ms (Views: 127.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-29 11:32:32 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (36.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (72.6ms)
+  Rendered layouts/application/_header.html.haml (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.4ms)
+Completed 200 OK in 115ms (Views: 66.9ms | ActiveRecord: 41.6ms)
+
+
+Started GET "/gestao/usuarios" for 127.0.0.1 at 2017-05-29 11:32:34 -0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/users/index.html.haml within layouts/application
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered engines/admin/app/views/admin/users/index.html.haml within layouts/application (29.4ms)
+  Rendered layouts/application/_header.html.haml (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.2ms)
+Completed 200 OK in 90ms (Views: 86.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gestao/usuarios/1/edit" for 127.0.0.1 at 2017-05-29 11:32:36 -0300
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/users/edit.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/users/_form.html.haml (45.1ms)
+  Rendered engines/admin/app/views/admin/users/edit.html.haml within layouts/application (50.6ms)
+  Rendered layouts/application/_header.html.haml (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.2ms)
+Completed 200 OK in 92ms (Views: 87.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/gestao/usuarios/1" for 127.0.0.1 at 2017-05-29 11:32:56 -0300
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x5k1hu0G67Xux7+QFNTg98mowgxlfDTEI5C5i+/N8roPiB5BV/2+H1/1kwl/W4/XirMkslMHQsocpCtK2czUkg==", "user"=>{"first_name"=>"Maria", "last_name"=>"Zi", "email"=>"teste@exameaqui.com", "password_digest"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "privilege"=>"administrador", "status"=>"true", "bio"=>""}, "commit"=>"Atualizar User", "id"=>"1"}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = $1 AND ("admin_users"."id" != $2) LIMIT $3[0m  [["email", "teste@exameaqui.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "admin_users" SET "first_name" = $1, "last_name" = $2, "password_digest" = $3, "bio" = $4, "updated_at" = $5 WHERE "admin_users"."id" = $6[0m  [["first_name", "Maria"], ["last_name", "Zi"], ["password_digest", ""], ["bio", ""], ["updated_at", 2017-05-29 14:32:56 UTC], ["id", 1]]
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/gestao/usuarios
+Completed 302 Found in 168ms (ActiveRecord: 33.8ms)
+
+
+Started GET "/gestao/usuarios" for 127.0.0.1 at 2017-05-29 11:32:56 -0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/users/index.html.haml within layouts/application
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered engines/admin/app/views/admin/users/index.html.haml within layouts/application (14.0ms)
+  Rendered layouts/application/_header.html.haml (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.1ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-29 11:33:01 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (25.7ms)
+  Rendered layouts/application/_header.html.haml (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.4ms)
+Completed 200 OK in 65ms (Views: 60.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gestao/postagens/new" for 127.0.0.1 at 2017-05-29 12:43:25 -0300
+Processing by Admin::PostsController#new as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/new.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (15.3ms)
+  Rendered engines/admin/app/views/admin/posts/new.html.haml within layouts/application (19.7ms)
+  Rendered layouts/application/_header.html.haml (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (2.7ms)
+Completed 200 OK in 127ms (Views: 85.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/gestao/postagens" for 127.0.0.1 at 2017-05-29 12:43:36 -0300
+Processing by Admin::PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jeDk12Pq+3bAgeUhO69xsko2r57aEqaRlGX9hLhkBbPQRoq7XDeyoSNG+bmuZFhl3l/uJ/jQbb2iAS4euVMjHg==", "post"=>{"title"=>"wfasfsdf", "publish"=>"true", "featured"=>"true", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f80e1c5d258 @tempfile=#<Tempfile:/tmp/RackMultipart20170529-25860-1feltvl.pdf>, @original_filename="0d2f927e6ec29fb287eceaac71c83fc2.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"post[photo]\"; filename=\"0d2f927e6ec29fb287eceaac71c83fc2.pdf\"\r\nContent-Type: application/pdf\r\n">, "content"=>"asdfasdfasdfasdf"}, "commit"=>"Criar Post"}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (54.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "publish", "photo", "featured", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "wfasfsdf"], ["content", "asdfasdfasdfasdf"], ["publish", true], ["photo", "#<ActionDispatch::Http::UploadedFile:0x007f80e1c5d258>"], ["featured", true], ["created_at", 2017-05-29 15:43:36 UTC], ["updated_at", 2017-05-29 15:43:36 UTC]]
+  [1m[35m (54.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/gestao/postagens
+Completed 302 Found in 115ms (ActiveRecord: 109.7ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-29 12:43:36 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (16.3ms)
+  Rendered layouts/application/_header.html.haml (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.3ms)
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gestao/postagens/9/edit" for 127.0.0.1 at 2017-05-29 12:43:40 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/edit.html.haml within layouts/application
+  Rendered engines/admin/app/views/admin/posts/_form.html.haml (13.2ms)
+  Rendered engines/admin/app/views/admin/posts/edit.html.haml within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for "#<ActionDispatch::Http::UploadedFile:0x007f80e1c5d258>":String):
+    10:       = f.input :featured, as: :select, include_blank: false, label: "Notícia Destaque?"
+    11:     .four.wide.field
+    12:       = f.input :photo, as: :file
+    13:       = link_to "visualizar arquivo atual", f.object.photo.url, target: '_blank' if !f.object.photo.to_s.empty?
+    14:   .fields
+    15:     .sixteen.wide.field
+    16:       = f.input :content, input_html: { style: 'min-height: 500px', id: 'textarea'}
+  
+engines/admin/app/views/admin/posts/_form.html.haml:13:in `block in _engines_admin_app_views_admin_posts__form_html_haml__1043091682850864639_70095760046220'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:137:in `block (2 levels) in form_for_with_haml'
+haml (4.0.7) lib/haml/helpers.rb:278:in `with_tabs'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:137:in `block in form_for_with_haml'
+actionview (5.0.2) lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+actionview (5.0.2) lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+haml (4.0.7) lib/haml/helpers/action_view_xss_mods.rb:5:in `with_output_buffer_with_haml_xss'
+actionview (5.0.2) lib/action_view/helpers/capture_helper.rb:39:in `capture'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:52:in `capture_with_haml'
+actionview (5.0.2) lib/action_view/helpers/form_helper.rb:450:in `form_for'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:139:in `form_for_with_haml'
+haml (4.0.7) lib/haml/helpers/action_view_xss_mods.rb:28:in `form_for_with_haml_xss'
+simple_form (3.4.0) lib/simple_form/action_view_extensions/form_helper.rb:26:in `block in simple_form_for'
+simple_form (3.4.0) lib/simple_form/action_view_extensions/form_helper.rb:45:in `with_simple_form_field_error_proc'
+simple_form (3.4.0) lib/simple_form/action_view_extensions/form_helper.rb:25:in `simple_form_for'
+engines/admin/app/views/admin/posts/_form.html.haml:1:in `_engines_admin_app_views_admin_posts__form_html_haml__1043091682850864639_70095760046220'
+actionview (5.0.2) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.0.2) lib/active_support/notifications.rb:166:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:354:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:157:in `render'
+actionview (5.0.2) lib/action_view/renderer/partial_renderer.rb:343:in `render_partial'
+actionview (5.0.2) lib/action_view/renderer/partial_renderer.rb:311:in `block in render'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/partial_renderer.rb:310:in `render'
+actionview (5.0.2) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+actionview (5.0.2) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:10:in `block in render_with_haml'
+haml (4.0.7) lib/haml/helpers.rb:89:in `non_haml'
+haml (4.0.7) lib/haml/helpers/action_view_mods.rb:10:in `render_with_haml'
+engines/admin/app/views/admin/posts/edit.html.haml:15:in `_engines_admin_app_views_admin_posts_edit_html_haml__1588972001053751082_70095760105940'
+actionview (5.0.2) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.0.2) lib/active_support/notifications.rb:166:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:354:in `instrument'
+actionview (5.0.2) lib/action_view/template.rb:157:in `render'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.0.2) lib/action_view/renderer/template_renderer.rb:14:in `render'
+actionview (5.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+actionview (5.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+actionview (5.0.2) lib/action_view/rendering.rb:104:in `_render_template'
+actionpack (5.0.2) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+actionview (5.0.2) lib/action_view/rendering.rb:83:in `render_to_body'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.0.2) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.0.2) lib/abstract_controller/rendering.rb:26:in `render'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (5.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/vitalino/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
+activesupport (5.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+railties (5.0.2) lib/rails/railtie.rb:193:in `public_send'
+railties (5.0.2) lib/rails/railtie.rb:193:in `method_missing'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.5ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.9ms)
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-29 12:43:47 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (17.2ms)
+  Rendered layouts/application/_header.html.haml (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (4.7ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gestao/bonecas" for 127.0.0.1 at 2017-05-29 13:55:52 -0300
+  
+ActionController::RoutingError (uninitialized constant Admin::DollsController):
+  
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+railties (5.0.2) lib/rails/railtie.rb:193:in `public_send'
+railties (5.0.2) lib/rails/railtie.rb:193:in `method_missing'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.2) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.4ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [0 times] (0.0ms)
+  Rendered collection of /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (7.0ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vitalino/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.6ms)
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-29 13:55:53 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (1.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (22.6ms)
+  Rendered layouts/application/_header.html.haml (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.9ms)
+Completed 200 OK in 65ms (Views: 59.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/gestao/postagens" for 127.0.0.1 at 2017-05-29 13:55:55 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered engines/admin/app/views/admin/posts/index.html.haml within layouts/application (28.5ms)
+  Rendered layouts/application/_header.html.haml (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (3.0ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 0.8ms)
+
+
