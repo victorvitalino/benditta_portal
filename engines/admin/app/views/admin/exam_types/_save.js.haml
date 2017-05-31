@@ -1,6 +1,0 @@
-- if @exam_type.errors.any?
-  $('.ui.modal.content').html("#{escape_javascript(render 'form')}")
-- else
-  $('.index').html("#{escape_javascript(render 'index')}")
-  $('#select-option').html("#{escape_javascript(render 'select_option')}")
-  $('.ui.modal').modal('hide')

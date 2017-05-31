@@ -1,2 +1,0 @@
-class ClinicUser < ApplicationRecord
-end

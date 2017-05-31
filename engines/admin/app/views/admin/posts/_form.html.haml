@@ -10,7 +10,7 @@
       = f.input :featured, as: :select, include_blank: false, label: "Notícia Destaque?"
     .four.wide.field
       = f.input :photo, as: :file
-      = link_to "visualizar arquivo atual", f.object.photo.url, target: '_blank' if !f.object.photo.to_s.empty?
+      -# = link_to "visualizar arquivo atual", f.object.photo.url, target: '_blank' if !f.object.photo.to_s.empty?
   .fields
     .sixteen.wide.field
       = f.input :content, input_html: { style: 'min-height: 500px', id: 'textarea'}
