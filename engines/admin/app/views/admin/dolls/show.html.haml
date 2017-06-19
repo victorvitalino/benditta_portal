@@ -1,0 +1,33 @@
+.ui.grid
+  .row
+    .column
+      %h1.ui.header
+        Bonecas
+        .sub.header
+          Dados
+      = link_to "Voltar para listagem", dolls_path, class: 'ui yellow button no-print'
+  .row
+    .column
+      .ui.segment.yellow
+        %table.ui.celled.striped.table
+          %thead
+            %tr
+              %th Cod.
+              %th Nome
+              %th Categoria
+          %tbody
+            %tr
+              %td= @doll.id
+              %td= @doll.name rescue nil
+              %td= @doll.categor rescue nil
+        %table.ui.celled.striped.table
+          %thead
+            %tr
+              %th description
+              %th Publicado?
+              %th Data de Inclusão
+          %tbody
+            %tr
+              %td= @doll.target
+              %td= @doll.publish ? "Sim" : "Não"
+              %td= @doll.created_at.strftime("%d/%m/%Y - %H:%M:%S")

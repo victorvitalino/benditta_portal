@@ -6,6 +6,8 @@ class CreateDolls < ActiveRecord::Migration[5.0]
       t.boolean :status
       t.string :sku
       t.string :photo
+      t.string :photo_2
+      t.string :photo_3
       t.text :description
 
       t.timestamps

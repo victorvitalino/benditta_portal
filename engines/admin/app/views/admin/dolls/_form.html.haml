@@ -9,11 +9,15 @@
     .three.wide.field
       = f.input :category, as: 'select', collection: ::Doll.categories.keys.to_a,include_blank: false, label: "Categoria"
   .fields
-    .three.wide.field
+    .four.wide.field
       = f.input :sku, placeholder: "Informe o sku"
-    .three.wide.field
+    .four.wide.field
       = f.input :photo, as: :file
-      -# = link_to "visualizar arquivo atual", f.object.photo.url, target: '_blank' if !f.object.photo.to_s.empty?
+    .four.wide.field
+      = f.input :photo_2, as: :file
+    .four.wide.field
+      = f.input :photo_3, as: :file
+
   .fields
     .sixteen.wide.field
       = f.input :description, input_html: { style: 'min-height: 500px', id: 'textarea'}

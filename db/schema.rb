@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 20170509192609) do
     t.boolean  "status"
     t.string   "sku"
     t.string   "photo"
+    t.string   "photo_2"
+    t.string   "photo_3"
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

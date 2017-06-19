@@ -49,7 +49,7 @@ module Admin
     private
 
     def set_params
-      params.require(:doll).permit(:photo,:name, :description, :status, :sku, :category)
+      params.require(:doll).permit(:photo,:name, :description, :status, :sku, :category,:photo_2, :photo_3)
     end
 
     def set_doll
