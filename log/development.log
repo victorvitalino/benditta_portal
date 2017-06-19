@@ -7748,3 +7748,31 @@ Processing by Admin::DollsController#show as HTML
 Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 0.5ms)
 
 
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /home/vitalino/projetos/benditta_portal/config/initializers/simple_form_semantic_ui.rb:151)
+Started GET "/gestao/bonecas" for 127.0.0.1 at 2017-06-19 14:49:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::DollsController#index as HTML
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dolls/index.html.haml within layouts/application
+  [1m[36mDoll Load (0.6ms)[0m  [1m[34mSELECT "dolls".* FROM "dolls"[0m
+  [1m[36mDoll Load (0.5ms)[0m  [1m[34mSELECT "dolls".* FROM "dolls" ORDER BY id DESC[0m
+  Rendered engines/admin/app/views/admin/dolls/index.html.haml within layouts/application (65.2ms)
+  Rendered layouts/application/_header.html.haml (3.0ms)
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (12.7ms)
+Completed 200 OK in 515ms (Views: 460.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/gestao/bonecas" for 127.0.0.1 at 2017-06-19 14:49:05 -0300
+Processing by Admin::DollsController#index as HTML
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/admin/app/views/admin/dolls/index.html.haml within layouts/application
+  [1m[36mDoll Load (0.5ms)[0m  [1m[34mSELECT "dolls".* FROM "dolls"[0m
+  [1m[36mDoll Load (0.5ms)[0m  [1m[34mSELECT "dolls".* FROM "dolls" ORDER BY id DESC[0m
+  Rendered engines/admin/app/views/admin/dolls/index.html.haml within layouts/application (28.8ms)
+  Rendered layouts/application/_header.html.haml (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/application/_menu.html.haml (10.0ms)
+Completed 200 OK in 86ms (Views: 81.0ms | ActiveRecord: 1.8ms)
+
+

@@ -32,7 +32,7 @@
           %th
       %tbody
         - if @dolls.present?
-          - @dolls.each do |doll|
+          - @dolls.order('id DESC').each do |doll|
             %tr
               %td= doll.id
               %td= doll.name
