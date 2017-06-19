@@ -13,7 +13,11 @@ module Admin
       @doll = ::Doll.new
     end
 
-    def create
+   def show
+     @doll = ::Doll.find(params[:id])
+   end
+
+  def create
       @doll = ::Doll.new(set_params)
 
       if @doll.save

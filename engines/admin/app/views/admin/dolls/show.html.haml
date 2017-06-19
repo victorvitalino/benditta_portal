@@ -17,9 +17,20 @@
               %th Categoria
           %tbody
             %tr
-              %td= @doll.id
+              %td= @doll.name
               %td= @doll.name rescue nil
-              %td= @doll.categor rescue nil
+              %td= @doll.category rescue nil
+        %table.ui.celled.striped.table
+          %thead
+            %tr
+              %th Foto 1
+              %th Foto 2
+              %th Foto 3
+          %tbody
+            %tr
+              %td= image_tag(@doll.photo, width: '150') rescue nil
+              %td= image_tag(@doll.photo_2, width: '150') rescue nil
+              %td= image_tag(@doll.photo_3, width: '150') rescue nil
         %table.ui.celled.striped.table
           %thead
             %tr
@@ -28,6 +39,6 @@
               %th Data de Inclusão
           %tbody
             %tr
-              %td= @doll.target
-              %td= @doll.publish ? "Sim" : "Não"
+              %td= @doll.description
+              %td= @doll.status ? "Sim" : "Não"
               %td= @doll.created_at.strftime("%d/%m/%Y - %H:%M:%S")
