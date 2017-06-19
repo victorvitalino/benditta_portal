@@ -1,0 +1,51 @@
+.row
+  .column
+    %h2.ui.header
+      Bonecas
+      .sub.header
+        Visualização de bonecas cadastradas
+  .column
+    .mini-divider
+    = link_to "+ Adicionar Nova Bonecas", new_doll_path, class: 'ui button blue', data: { disable_with:  t(:disable_with)}
+.divider
+.row
+  .column
+    .ui.segment
+      = simple_form_for url_for, method: :get do |f|
+        .fields
+          .field.two.wide
+            = f.input :by_cod, label: "Código"
+          .field.four.wide
+            = f.input :by_name, label: "Nome"
+          .field.two.wide
+            = f.submit "Filtrar lista", name: nil, class: 'ui button green filter'
+.divider
+.row
+  .column
+    %table.ui.table.striped.bordered.celled
+      %thead
+        %tr
+          %th.collapsing Cod.
+          %th Nome
+          %th.collapsing Situação
+          %th.collapsing Data de cadastro
+          %th
+      %tbody
+        - if @dolls.present?
+          - @dolls.each do |doll|
+            %tr
+              %td= doll.id
+              %td= doll.name
+              %td= doll.status ? "ativo" : "Inativo"
+              %td= doll.created_at.strftime("%d/%m/%Y")
+              %td.collapsing
+                = link_to doll_path(doll), class: 'ui button icon gray mini' do
+                  %i.icon.eye
+                = link_to edit_doll_path(doll), class: 'ui button icon blue mini' do
+                  %i.icon.pencil
+                = link_to doll_path(doll), method: :delete, data: { confirm: t(:confirm), disable_with: t(:disable_with) }, class: 'ui button icon red mini' do
+                  %i.icon.remove
+        - else
+          %tr
+            %td{colspan: 5}
+              %i Nenhuma dollagem cadastrada.
