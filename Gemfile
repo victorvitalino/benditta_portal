@@ -17,6 +17,7 @@ gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.5'
 
+gem 'has_scope'
 gem 'haml'
 gem 'simple_form'
 gem "mini_magick"

@@ -1,0 +1,185 @@
+%section#blog.container
+  .center
+    %h2.title-geral Blog da Maria Zi
+  .blog
+    .row
+      .col-md-8
+        .blog-item
+          %img.img-responsive.img-blog{:alt => "", :src => "images/blog/blog1.jpg", :width => "100%"}/
+          .row
+            .col-xs-12.col-sm-2.text-center
+              .entry-meta
+                %span#publish_date 07  NOV
+                %span
+                  %i.fa.fa-user
+                  %a{:href => "#"} John Doe
+                %span
+                  %i.fa.fa-comment
+                  %a{:href => "blog-item.html#comments"} 2 Comments
+                %span
+                  %i.fa.fa-heart
+                  %a{:href => "#"} 56 Likes
+            .col-xs-12.col-sm-10.blog-content
+              %h2 A gratidão e o pé de pequi
+              %p Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.
+              %p Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper.
+              .post-tags
+                %strong Tag:
+                %a{:href => "#"} Gratidão
+                \/
+                %a{:href => "#"} Benditta
+                \/
+                %a{:href => "#"} Arte em Pano
+        / /.blog-item
+        %h1#comments_title 5 Comentários
+        .media.comment_section
+          .pull-left.post_comments
+            %a{:href => "#"}
+              %img.img-circle{:alt => "", :src => "images/blog/girl.png"}/
+          .media-body.post_reply_comments
+            %h3 Marsh
+            %h4 NOVEMBRO 9, 2014 às 21:15
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        .media.comment_section
+          .pull-left.post_comments
+            %a{:href => "#"}
+              %img.img-circle{:alt => "", :src => "images/blog/boy2.png"}/
+          .media-body.post_reply_comments
+            %h3 Marsh
+            %h4 NOVEMBER 9, 2013 AT 9:15 PM
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        .media.comment_section
+          .pull-left.post_comments
+            %a{:href => "#"}
+              %img.img-circle{:alt => "", :src => "images/blog/boy3.png"}/
+          .media-body.post_reply_comments
+            %h3 Marsh
+            %h4 NOVEMBER 9, 2013 AT 9:15 PM
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        %div{:id => "contact-page clearfix"}
+          .status.alert.alert-success{:style => "display: none"}
+          .message_heading
+            %h4 Deixe o seu Comentário
+          %form#main-contact-form.contact-form{:action => "sendemail.php", :method => "post", :name => "contact-form", :role => "form"}
+            .row
+              .col-sm-5
+                .form-group
+                  %label Nome *
+                  %input.form-control{:required => "required", :type => "text"}/
+                .form-group
+                  %label Email *
+                  %input.form-control{:required => "required", :type => "email"}/
+              .col-sm-7
+                .form-group
+                  %label Mensagem *
+                  %textarea#message.form-control{:name => "message", :required => "required", :rows => "8"}
+                .form-group
+                  %button.btn.btn-primary.btn-lg{:required => "required", :type => "submit"} Enviar Mensagem
+        / /#contact-page
+      / /.col-md-8
+      %aside.col-md-4
+        .widget.search
+          %form{:role => "form"}
+            %input.form-control.search_box{:autocomplete => "off", :placeholder => "Pesquisar", :type => "text"}/
+        / /.search
+        .widget.categories
+          %h3 Comentários
+          .row
+            .col-sm-12
+              .single_comments
+                %img{:alt => "", :src => "images/blog/avatar3.png"}/
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                .entry-meta.small.muted
+                  %span
+                    Por
+                    %a{:href => "#"} Alex
+              .single_comments
+                %img{:alt => "", :src => "images/blog/avatar3.png"}/
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                .entry-meta.small.muted
+                  %span
+                    Por
+                    %a{:href => "#"} Alex
+              .single_comments
+                %img{:alt => "", :src => "images/blog/avatar3.png"}/
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                .entry-meta.small.muted
+                  %span
+                    Por
+                    %a{:href => "#"} Alex
+        / /.recent comments
+        .widget.categories
+          %h3 Categorias
+          .row
+            .col-sm-6
+              %ul.blog_category
+                %li
+                  %a{:href => "#"}
+                    Bendittas
+                    %span.badge 04
+                %li
+                  %a{:href => "#"}
+                    Blog
+                    %span.badge 10
+                %li
+                  %a{:href => "#"}
+                    Portfolio
+                    %span.badge 06
+                %li
+                  %a{:href => "#"}
+                    Entrevistas
+                    %span.badge 25
+        / /.categories
+        .widget.archieve
+          %h3 Arquivo
+          .row
+            .col-sm-12
+              %ul.blog_archieve
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-angle-double-right
+                    December 2013
+                    %span.pull-right (97)
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-angle-double-right
+                    November 2013
+                    %span.pull-right (32)
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-angle-double-right
+                    October 2013
+                    %span.pull-right (19)
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-angle-double-right
+                    September 2013
+                    %span.pull-right (08)
+        / /.archieve
+        .widget.tags
+          %h3 Tag Cloud
+          %ul.tag-cloud
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Bonecas de Pano
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Bonecas
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Artesanato
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Maria Zi
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Arte em Pano
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Bendittas
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Arte Brasília
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Bendittos
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} Artesã
+            %li
+              %a.btn.btn-xs.btn-primary{:href => "#"} parteira das Bendittas
+        / /.tags
+    / /.row
+  / /.blog
+/ /#blog

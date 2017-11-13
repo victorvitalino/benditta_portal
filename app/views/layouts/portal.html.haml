@@ -7,5 +7,63 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'portal', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'portal', 'data-turbolinks-track': 'reload'
-  %body
+  %body.homepage
+    %header#header
+      .top-bar
+        .container
+          .row
+            .col-sm-6.col-xs-4
+              .top-number
+                %p
+                  %i.fa.fa-phone-square
+                  61 8104 - 1958
+            .col-sm-6.col-xs-8
+              .social
+                %ul.social-share
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-facebook
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-twitter
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-instagram
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-pinterest
+                .search
+                  %form{:role => "form"}
+                    %input.search-form{:autocomplete => "off", :placeholder => "Pesquisar", :type => "text"}/
+                    %i.fa.fa-search
+        / /.container
+      / /.top-bar
+      %nav.navbar.navbar-inverse{:role => "banner"}
+        .container
+          .navbar-header
+            %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.navbar-brand{:href => "index.html"}
+              %img{:alt => "logo", :src => "images/logobenditta.png"}/
+          .collapse.navbar-collapse.navbar-right
+            %ul.nav.navbar-nav
+              %li.active
+                %a{:href => "index.html"} Home
+              %li
+                %a{:href => "about-us.html"} Quem Somos
+              / <li><a href="services.html">Services</a></li>
+              %li
+                %a{:href => "portfolio.html"} Portfolio
+              %li
+                %a{:href => "blog.html"} Blog
+              %li
+                %a{:href => "entrevistas.html"} Entrevistas
+              %li
+                %a{:href => "contact-us.html"} Contato
+        / /.container
+      / /nav
+    / /header
     = yield
